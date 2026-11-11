@@ -1,0 +1,25 @@
+.not-found-frame { min-height: 100svh; display: flex; flex-direction: column; }
+.not-found-main { position: relative; flex: 1; display: grid; place-items: center; padding: 64px 0 76px; overflow: hidden; }
+.not-found-grid { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--theme-grid) 1px, transparent 1px), linear-gradient(90deg, var(--theme-grid) 1px, transparent 1px); background-size: 44px 44px; mask-image: radial-gradient(ellipse 35% 45% at 50% 30%, #000 0%, transparent 100%); opacity: .65; }
+.not-found-content { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.not-found-art { display: flex; align-items: center; justify-content: center; gap: clamp(8px, 1.6vw, 25px); font-size: clamp(126px, 17vw, 220px); font-weight: 600; letter-spacing: -.075em; line-height: 1; color: var(--theme-ink); }
+.not-found-zero { position: relative; display: grid; place-items: center; width: .68em; height: .84em; border: 2px dashed var(--theme-line); border-radius: 50%; }
+.not-found-zero img { width: 36%; height: auto; }
+.not-found-cross { position: absolute; color: var(--theme-faint); font-size: 16px; font-weight: 400; letter-spacing: 0; }
+.not-found-cross-top { top: -8px; right: -8px; }
+.not-found-cross-bottom { bottom: -8px; left: -8px; }
+.not-found-kicker { margin-top: 39px; color: var(--theme-muted); font-size: 12px; font-weight: 600; letter-spacing: .1em; }
+.not-found-content h1 { margin: 16px 0 12px; color: var(--theme-ink); font-size: clamp(32px, 3.5vw, 48px); line-height: 1.13; letter-spacing: -.045em; }
+.not-found-content h1 em { color: var(--red); }
+.not-found-content p { margin: 0; color: var(--theme-muted); font-size: 16px; line-height: 1.6; }
+.not-found-home { display: inline-flex; align-items: center; justify-content: center; gap: 28px; min-height: 48px; margin-top: 28px; padding: 0 18px; background: var(--theme-action); color: var(--theme-white); border-radius: 8px; font-size: 14px; font-weight: 600; }
+.not-found-home:hover { background: var(--theme-action-hover); }
+.not-found-home span { font-size: 18px; }
+:root[data-theme='contrast'] .not-found-content h1 em { color: #a90020; }
+@media (max-width: 600px) {
+  .not-found-main { padding: 65px 0; }
+  .not-found-grid { mask-image: radial-gradient(ellipse 70% 40% at 50% 30%, #000 0%, transparent 100%); }
+  .not-found-art { font-size: clamp(110px, 33vw, 155px); }
+  .not-found-kicker { margin-top: 32px; }
+  .not-found-content h1 { font-size: 32px; }
+}

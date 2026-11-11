@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     title: site.title,
     description: site.description,
   },
-  robots: { index: true, follow: true },
   icons: { icon: '/brand/cite-icon.png', apple: '/brand/cite-icon.png' },
 };
 

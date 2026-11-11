@@ -1,6 +1,6 @@
 import { SystemPreview } from '@/src/components/system-preview';
-import { ThemeSwitcher } from '@/src/components/theme-switcher';
-import { CopyrightYear } from '@/src/components/copyright-year';
+import { SiteHeader } from '@/src/components/site-header';
+import { SiteFooter } from '@/src/components/site-footer';
 import { site } from '@/src/lib/site';
 
 export default function Home() {
@@ -16,16 +16,7 @@ export default function Home() {
       }).replace(/</g, '\\u003c') }} />
       <a className="skip-link" href="#main">Skip to content</a>
       <div className="site-frame">
-        <header className="site-header">
-          <a className="brand" href="#" aria-label="CITE home">
-            <img src="/brand/cite-logo.png" alt="CITE" width="130" height="25" />
-          </a>
-          <div className="header-right">
-            <a className="donum-credit" href="https://donum.im" aria-label="Donum website">BY <span className="donum-wordmark"><img className="donum-light" src="/brand/donum-lockup-light.svg" alt="Donum" width="105" height="29" /><img className="donum-dark" src="/brand/donum-lockup-dark.svg" alt="Donum" width="105" height="29" /></span></a>
-            <span className="header-divider" />
-            <ThemeSwitcher />
-          </div>
-        </header>
+        <SiteHeader />
         <main id="main">
           <section className="hero" aria-labelledby="hero-title">
             <div className="hero-copy">
@@ -36,11 +27,7 @@ export default function Home() {
             <SystemPreview />
           </section>
         </main>
-        <footer className="site-footer">
-          <div className="footer-brand"><img src="/brand/cite-icon.png" alt="" width="23" height="17" /><span>© <CopyrightYear /> <a href="https://donum.im">Donum Platforms</a></span></div>
-          <div className="footer-links"><a href="/LICENSE" download>MIT License <span>↗</span></a><a href="/TRADEMARKS.txt">Brand notice <span>↗</span></a></div>
-          <p>Donum and CITE names and brand assets are excluded from the MIT license.</p>
-        </footer>
+        <SiteFooter />
       </div>
     </>
   );
