@@ -1,4 +1,4 @@
-# CITE — coming soon
+# CITE | Coming soon
 
 A static Next.js App Router landing page for Donum’s open source design system.
 
@@ -26,3 +26,7 @@ Code: MIT © Donum. Donum and CITE names, trade names, logos, wordmarks, icons, 
 Typography uses the Inter font, self-hosted with regular (400) and semibold (600) weights. Inter is licensed separately under the [SIL Open Font License 1.1](src/app/fonts/OFL.txt).
 
 Appearance follows the system by default. A manually selected appearance is saved in browser local storage and can be reset by choosing System.
+
+## Search and sharing
+
+Set `NEXT_PUBLIC_SITE_URL` to the public production origin before building. The default is `https://citeui.com`, the canonical production domain. This value determines the canonical URL, Open Graph and X image URLs, sitemap, and robots sitemap reference. The social image at `public/og.png` uses the supplied CITE logo and Inter font.

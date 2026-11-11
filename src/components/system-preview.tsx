@@ -15,7 +15,7 @@ export function SystemPreview() {
       <div className="canvas-card">
         <div className="canvas-header"><div className="canvas-brand"><img src="/brand/cite-icon.png" alt="" width="24" height="18" /><span>CITE <span className="canvas-slash">/</span> <span className="canvas-title">Elements</span></span></div><span className="canvas-dots" aria-hidden="true">•••</span></div>
         <div className="canvas-body">
-          <div className="canvas-intro"><span>THE FOUNDATIONS</span><span>01 — 03</span></div>
+          <div className="canvas-intro"><span>THE FOUNDATIONS</span><span>01 / 03</span></div>
           <div className="canvas-heading">A little more<br /><span>considered.</span><span className="sparkle" aria-hidden="true">✳</span></div>
           <div className="canvas-rule" />
           <div className="component-row"><span className="component-label">BUTTON</span><button className="demo-button" onClick={() => setEnabled(!enabled)}>Make it happen <span>↗</span></button></div>
