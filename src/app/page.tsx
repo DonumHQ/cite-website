@@ -1,5 +1,6 @@
 import { SystemPreview } from '@/src/components/system-preview';
 import { ThemeSwitcher } from '@/src/components/theme-switcher';
+import { CopyrightYear } from '@/src/components/copyright-year';
 import { site } from '@/src/lib/site';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         name: site.name,
         url: `${site.url}/`,
         description: site.description,
-        publisher: { '@type': 'Organization', name: 'Donum' },
+        publisher: { '@type': 'Organization', name: 'Donum Platforms', url: 'https://donum.im' },
       }).replace(/</g, '\\u003c') }} />
       <a className="skip-link" href="#main">Skip to content</a>
       <div className="site-frame">
@@ -20,7 +21,7 @@ export default function Home() {
             <img src="/brand/cite-logo.png" alt="CITE" width="130" height="25" />
           </a>
           <div className="header-right">
-            <span className="donum-credit">BY <span className="donum-wordmark"><img className="donum-light" src="/brand/donum-lockup-light.svg" alt="Donum" width="105" height="29" /><img className="donum-dark" src="/brand/donum-lockup-dark.svg" alt="Donum" width="105" height="29" /></span></span>
+            <a className="donum-credit" href="https://donum.im" aria-label="Donum website">BY <span className="donum-wordmark"><img className="donum-light" src="/brand/donum-lockup-light.svg" alt="Donum" width="105" height="29" /><img className="donum-dark" src="/brand/donum-lockup-dark.svg" alt="Donum" width="105" height="29" /></span></a>
             <span className="header-divider" />
             <ThemeSwitcher />
           </div>
@@ -36,7 +37,7 @@ export default function Home() {
           </section>
         </main>
         <footer className="site-footer">
-          <div className="footer-brand"><img src="/brand/cite-icon.png" alt="" width="23" height="17" /><span>© {new Date().getFullYear()} Donum</span></div>
+          <div className="footer-brand"><img src="/brand/cite-icon.png" alt="" width="23" height="17" /><span>© <CopyrightYear /> <a href="https://donum.im">Donum Platforms</a></span></div>
           <div className="footer-links"><a href="/LICENSE" download>MIT License <span>↗</span></a><a href="/TRADEMARKS.txt">Brand notice <span>↗</span></a></div>
           <p>Donum and CITE names and brand assets are excluded from the MIT license.</p>
         </footer>
