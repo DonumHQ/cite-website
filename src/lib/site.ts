@@ -1,7 +1,7 @@
 /** Set this to the public production origin at build time. */
 const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
-export const siteUrl = new URL(configuredUrl || 'https://citeui.com');
+export const siteUrl = new URL(configuredUrl || 'https://www.citeui.com');
 
 if (!['http:', 'https:'].includes(siteUrl.protocol) || siteUrl.pathname !== '/' || siteUrl.search || siteUrl.hash) {
   throw new Error('NEXT_PUBLIC_SITE_URL must be an HTTP(S) origin, such as https://cite.example.com');

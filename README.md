@@ -29,4 +29,4 @@ Appearance follows the system by default. A manually selected appearance is save
 
 ## Search and sharing
 
-Set `NEXT_PUBLIC_SITE_URL` to the public production origin before building. The default is `https://citeui.com`, the canonical production domain. This value determines the canonical URL, Open Graph and X image URLs, sitemap, and robots sitemap reference. The social image at `public/og.png` uses the supplied CITE logo and Inter font.
+Set `NEXT_PUBLIC_SITE_URL` to the public production origin before building. The default is `https://www.citeui.com`, the canonical production domain. This value determines the canonical URL, Open Graph and X image URLs, sitemap, and robots sitemap reference. The social image at `public/og.png` uses the supplied CITE logo and Inter font.
